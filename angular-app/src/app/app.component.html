@@ -1,0 +1,16 @@
+<main class="card">
+  <p class="badge">Angular</p>
+  <h1>Message Display</h1>
+
+  <label for="messageInput">Message to Display</label>
+  <input
+    id="messageInput"
+    type="text"
+    [(ngModel)]="inputMessage"
+    placeholder="Type a message"
+  />
+
+  <button type="button" (click)="displayMessage()">Display Message</button>
+
+  <h2>{{ displayedMessage }}</h2>
+</main>
